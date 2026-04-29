@@ -1,0 +1,34 @@
+[cloudera@quickstart ~]$ hdfs dfs -mkdir CAPSTONE
+[cloudera@quickstart ~]$ hdfs dfs -ls CAPSTONE
+[cloudera@quickstart ~]$ hdfs dfs -put Desktop/customer.csv CAPSTONE
+[cloudera@quickstart ~]$ hdfs dfs -put Desktop/transaction.csv CAPSTONE
+[cloudera@quickstart ~]$ hdfs dfs -ls CAPSTONE
+Found 2 items
+-rw-r--r--   1 cloudera cloudera        375 2026-04-28 23:25 CAPSTONE/customer.csv
+-rw-r--r--   1 cloudera cloudera        211 2026-04-28 23:26 CAPSTONE/transaction.csv
+[cloudera@quickstart ~]$ hdfs dfs -ls CAPSTONE
+Found 2 items
+-rw-r--r--   1 cloudera cloudera        375 2026-04-28 23:25 CAPSTONE/customer.csv
+-rw-r--r--   1 cloudera cloudera        211 2026-04-28 23:26 CAPSTONE/transaction.csv
+[cloudera@quickstart ~]$ hdfs dfs -put Desktop/transaction_1.csv CAPSTONE
+[cloudera@quickstart ~]$ hdfs dfs -ls CAPSTONE
+Found 3 items
+-rw-r--r--   1 cloudera cloudera        375 2026-04-28 23:25 CAPSTONE/customer.csv
+-rw-r--r--   1 cloudera cloudera        211 2026-04-28 23:26 CAPSTONE/transaction.csv
+-rw-r--r--   1 cloudera cloudera         86 2026-04-29 00:10 CAPSTONE/transaction_1.csv
+[cloudera@quickstart ~]$ hdfs dfs -put Desktop/transaction_2.csv CAPSTONE
+[cloudera@quickstart ~]$ hdfs dfs -ls CAPSTONE
+Found 4 items
+-rw-r--r--   1 cloudera cloudera        375 2026-04-28 23:25 CAPSTONE/customer.csv
+-rw-r--r--   1 cloudera cloudera        211 2026-04-28 23:26 CAPSTONE/transaction.csv
+-rw-r--r--   1 cloudera cloudera         86 2026-04-29 00:10 CAPSTONE/transaction_1.csv
+-rw-r--r--   1 cloudera cloudera         86 2026-04-29 00:18 CAPSTONE/transaction_2.csv
+[cloudera@quickstart ~]$ hdfs dfs -put Desktop/transaction_3.csv CAPSTONE
+[cloudera@quickstart ~]$ hdfs dfs -ls CAPSTONE
+Found 5 items
+-rw-r--r--   1 cloudera cloudera        375 2026-04-28 23:25 CAPSTONE/customer.csv
+-rw-r--r--   1 cloudera cloudera        211 2026-04-28 23:26 CAPSTONE/transaction.csv
+-rw-r--r--   1 cloudera cloudera         86 2026-04-29 00:10 CAPSTONE/transaction_1.csv
+-rw-r--r--   1 cloudera cloudera         86 2026-04-29 00:18 CAPSTONE/transaction_2.csv
+-rw-r--r--   1 cloudera cloudera         90 2026-04-29 00:20 CAPSTONE/transaction_3.csv
+[cloudera@quickstart ~]$ 
